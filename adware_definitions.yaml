@@ -1,0 +1,154 @@
+---
+- title:  Downlite(VSearch)
+  components:
+    - '/Library/Application Support/VSearch'
+    - '/Library/LaunchAgents/com.vsearch.agent.plist'
+    - '/Library/LaunchDaemons/com.vsearch.daemon.plist'
+    - '/Library/LaunchDaemons/com.vsearch.helper.plist'
+    - '/Library/LaunchDaemons/Jack.plist'
+    - '/Library/PrivilegedHelperTools/Jack'
+    - '/System/Library/Frameworks/VSearch.framework'
+  startup_keywords:
+    - vsearch
+    - jack.plist
+
+- title: Conduit
+  components:
+    - '/Library/InputManagers/CTLoader/'
+    - '/Library/LaunchAgents/com.conduit.loader.agent.plist'
+    - '/Library/LaunchDaemons/com.perion.searchprotectd.plist'
+    - '/Library/Application Support/SIMBL/Plugins/CT2285220.bundle'
+    - '/Library/Application Support/Conduit/'
+    - '/Library/Application Support/SIMBL/'
+    - '/Library/LaunchAgents/net.culater.SIMBL.Agent.plist'
+    - '/Library/ScriptingAdditions/SIMBL.osax'
+    - '/Applications/SearchProtect.app'
+    - '/Applications/SearchProtect/'
+    - '~/Library/Application Support/Conduit/'
+    - '~/Library/Internet Plug-Ins/ConduitNPAPIPlugin.plugin'
+    - '~/Library/Internet Plug-Ins/TroviNPAPIPlugin.plugin'
+    - '~/Conduit/'
+    - '~/Trovi/'
+  firefox_keywords:
+    - Conduit
+    - abstraction.js
+    - takeOverNewTab.txt
+    - MyBrand.xml
+    - Community Toolbar
+  safari_keywords:
+    - Conduit
+    - searchExt
+    - MyBrand
+  chrome_keywords:
+    - Conduit
+    - MyBrand
+  startup_keywords:
+    - conduit
+    - ctloader
+    - simbl
+    - searchprotect
+
+- title: Vidx
+  components:
+    - '/Applications/Vidx.app'
+    - '~/Library/Safari/Extensions/extension.safariextz'
+  firefox_keywords:
+    - vidx
+  chrome_keywords:
+    - vidx
+  safari_keywords:
+    - vidx
+
+- title: GoPhoto.it
+  components:
+    - '/private/var/tmp/gophoto-it.crx'
+    - '/private/var/tmp/gophotoit.crx'
+    - '/private/var/tmp/freehdsport.crx'
+  firefox_keywords:
+    - GoPhoto.it
+    - FreeHDSport.TV
+    - user.js
+  safari_keywords:
+    - GoPhoto
+    - FreeHDSport
+  chrome_keywords:
+    - GoPhoto
+    - FreeHDSport
+
+- title: Spigot
+  components:
+    - '~/Library/Application Support/Spigot'
+    - '~/Library/Application Support/Google/Chrome/External Extensions/hbcennhacfaagdopikcegfcobcadeocj.json'
+    - '~/Library/Application Support/Google/Chrome/External Extensions/hjalolmjgklbjgaomjjofphdjnajmnim.json'
+    - '~/Library/Application Support/Google/Chrome/External Extensions/icdlfehblmklkikfigmjhbmmpmkmpooj.json'
+    - '~/Library/Application Support/Google/Chrome/External Extensions/mhkaekfpcppmmioggniknbnbdbcigpkk.json'
+    - '~/Library/Application Support/Google/Chrome/External Extensions/pfndaklgolladniicklehhancnlgocpp.json'
+  firefox_keywords:
+    - saamazon
+    - saebay
+    - savingsslider
+    - searchme
+  safari_keywords:
+    - searchme
+    - slick savings
+    - slicksavings
+    - amazon shopping assistant
+    - ebay shopping assistant
+
+- title: FKCodec
+  components:
+    - '~/Library/Application Support/Codec-M'
+    - '~/Library/LaunchAgents/com.codecm.uploader.plist'
+    - '/Applications/Codec-M.app'
+  firefox_keywords:
+    - 'codec-m'
+    - fkcodec
+  safari_keywords:
+    - 'codec-m'
+    - fkcodec
+  chrome_keywords:
+    - 'codec-m'
+    - fkcodec
+  startup_keywords:
+    - codecm
+    - fkcodec
+
+- title: Genieo
+  components:
+    - '/private/etc/launchd.conf'
+    - '/Applications/Genieo'
+    - '/Applications/InstallMac'
+    - '/Applications/Uninstall Genieo'
+    - '/Applications/Uninstall IM Completer.app'
+    - '~/Library/Application Support/com.genieoinnovation.Installer'
+    - '~/Library/Application Support/Genieo'
+    - '~/Library/LaunchAgents/com.genieo.completer.download.plist'
+    - '~/Library/LaunchAgents/com.genieo.completer.update.plist'
+    - '/Library/LaunchAgents/com.genieoinnovation.macextension.plist'
+    - '/Library/LaunchAgents/com.genieoinnovation.macextension.client.plist'
+    - '/Library/LaunchAgents/com.genieo.engine.plist'
+    - '/Library/LaunchAgents/com.genieo.completer.update.plist'
+    - '/Library/LaunchDaemons/com.genieoinnovation.macextension.client.plist'
+    - '/Library/PrivilegedHelperTools/com.genieoinnovation.macextension.client'
+    - '/usr/lib/libgenkit.dylib'
+    - '/usr/lib/libgenkitsa.dylib'
+    - '/usr/lib/libimckit.dylib'
+    - '/usr/lib/libimckitsa.dylib'
+    - '/Library/Frameworks/GenieoExtra.framework'
+  firefox_keywords:
+    - omnibar
+    - genieo
+    - 'my-homepage.xml'
+  safari_keywords:
+    - omnibar
+    - genieo
+  chrome_keywords:
+    - genieo
+    - omnibar
+  startup_keywords:
+    - genieo
+    - installmac
+  process_names:
+    - Genieo
+    - InstallMac
+    - Application
