@@ -1,5 +1,5 @@
 ---
-- title:  Downlite(VSearch)
+- title: Downlite(VSearch)
   components:
     - '/Library/Application Support/VSearch'
     - '/Library/LaunchAgents/com.vsearch.agent.plist'
