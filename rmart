@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative 'rmart.rb'
+
+# Check for root privileges, 0 is the user ID of root
+if Process.uid != 0
+  system "clear"
+  puts "This program requires root privileges to run."
+  system "sudo ./#{$0}" # Run this file as root
+else
+  RMART.new.sweep
+end

@@ -26,7 +26,7 @@ class RMART
         remove_file component
       end
 
-      if adware['firefox_keywords']
+      if adware['firefox_keywords'] && firefox_installed?
         remove_firefox_components adware['firefox_keywords']
       end
 
@@ -34,7 +34,7 @@ class RMART
         remove_safari_components adware['safari_keywords']
       end
 
-      if adware['chrome_keywords']
+      if adware['chrome_keywords'] && chrome_installed?
         remove_chrome_components adware['chrome_keywords']
       end
 
@@ -44,6 +44,20 @@ class RMART
     end
 
     print_summary
+  end
+
+  def firefox_installed?
+    unless @firefox_installed
+      @firefox_installed = File.exist? '/Applications/Firefox.app'
+    end
+    @firefox_installed
+  end
+
+  def chrome_installed?
+    unless @chrome_installed
+      @chrome_installed = File.exist? '/Applications/Google Chrome.app'
+    end
+    @chrome_installed
   end
 
   private
@@ -149,13 +163,4 @@ class RMART
   def patternize strings
     /#{strings.join('|')}/i
   end
-end
-
-# Check for root privileges, 0 is the user ID of root
-if Process.uid != 0
-  system "clear"
-  puts "This program requires root privileges to run."
-  system "sudo ./#{$0}" # Run this file as root
-else
-  RMART.new.sweep
 end
