@@ -6,7 +6,7 @@ Removes some particularly obnoxious adware on Macs.
 
 `git clone https://github.com/brownmike/rmart.git`
 
-Or you can download rmart.rb and adware_definitions.yaml. Just make sure they're in the same directory.
+Or you can download `rmart.rb`, `rmart` and `adware_definitions.yaml`. Just make sure they're in the same directory.
 
 ## Requirements
 
@@ -14,9 +14,11 @@ I've only used it on Mac OS X 10.9 & 10.10
 
 ## Usage
 
-`cd rmart`
+If you cloned the repo:
 
-`./rmart.rb`
+`$ cd rmart ; ./rmart`
+
+Otherwise execute `./rmart` in the directory where the files are
 
 ## TODO:
 + Add more adware definitions
