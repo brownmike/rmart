@@ -8,6 +8,7 @@
     - '/Library/LaunchDaemons/Jack.plist'
     - '/Library/PrivilegedHelperTools/Jack'
     - '/System/Library/Frameworks/VSearch.framework'
+    - '/System/Library/Frameworks/v.framework'
   startup_keywords:
     - vsearch
     - jack.plist
@@ -124,6 +125,10 @@
     - '~/Library/Application Support/Genieo'
     - '~/Library/LaunchAgents/com.genieo.completer.download.plist'
     - '~/Library/LaunchAgents/com.genieo.completer.update.plist'
+    - '~/Library/Preferences/com.apple.genieo.global.settings.plist'
+    - '~/Library/SavedState/com.genieo.RemoveGenieoMac.savedState'
+    - '~/Library/Saved Application State/com.genieo.RemoveGenieoMac.savedState/'
+    - '~/Library/LaunchAgents/com.genieo.completer.ltvbit.plist'
     - '/Library/LaunchAgents/com.genieoinnovation.macextension.plist'
     - '/Library/LaunchAgents/com.genieoinnovation.macextension.client.plist'
     - '/Library/LaunchAgents/com.genieo.engine.plist'
